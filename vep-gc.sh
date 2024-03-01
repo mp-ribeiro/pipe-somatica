@@ -13,10 +13,9 @@ mkdir -p vep_output
 chmod 777 vep_output
 
 
-#---------------------------------------------------#
-# Aqui tinha a etapa do VEP                         #
-# Ver: https://github.com/renatopuga/lmabrasil-hg38 #
-#---------------------------------------------------#
+# VEP
+# https://github.com/renatopuga/lmabrasil-hg38
+
 
 ## filter_vep
 udocker --allow-root run --rm  -v `pwd`:`pwd` -w `pwd` ensemblorg/ensembl-vep filter_vep \
